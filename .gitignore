@@ -53,3 +53,36 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# Model and training artifacts
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+checkpoints/
+adapters/
+runs/
+
+# Archives and large generated files
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.xz
+
+# Local caches
+__pycache__/
+.pytest_cache/
+.venv/
+node_modules/
