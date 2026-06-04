@@ -18,17 +18,15 @@ keeps the public map, links, status, standards, and installation index.
 Large source families such as Haicode, JCH, JUROX, Haijun, and future `hai*`
 packages should be downloaded or installed separately according to need.
 
-## Initial Registry Structure
+## Registry Files
 
-- `docs/`: ecosystem maps, roadmap, governance, and cloud/DNS planning.
-- `registry/`: package registry, repository links, and install index.
-- `haicode/`: Haicode and Converhai registry entry.
-- `haijun/`: Haijun AI registry entry.
-- `jurox/`: JUROX OS registry entry.
-- `infrastructure/`: domain, DNS, cloud, GPU, storage, and database planning.
-- `datasets/`: dataset governance, curation, and safety rules.
-- `models/`: model selection and server-only model policy.
-- `security/`: secrets, access, and owner-protection rules.
+- `registry/packages.yaml`: source of truth for package/repository targets.
+- `registry/install-index.md`: human-readable package index.
+- `registry/README.md`: registry rules.
+
+This root repository should remain intentionally small. Detailed docs and source
+trees belong in their separate repositories, for example `haijun`, `haicode`,
+`jurox`, `jch`, and future `hai*` packages.
 
 ## Current Domain
 
