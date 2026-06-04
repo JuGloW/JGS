@@ -17,9 +17,12 @@ Haijun is the planned private AI developer agent for the JuGloW JGS ecosystem.
 - GPU is used only for approved training/evaluation sessions.
 - No model weights are committed to GitHub.
 
-## Current Deploy Package
+## Package Location
 
-The deploy package is prepared locally in:
+Haijun must be a separate package/repository, not bundled into the JGS root
+repository.
+
+Current local package workspace:
 
 ```text
 D:\\github AI\\haijun-ai\\server-package
@@ -30,3 +33,11 @@ Future RunPod path:
 ```text
 /workspace/haijun-ai/server-package
 ```
+
+Future public repository target:
+
+```text
+https://github.com/JuGloW/haijun-ai
+```
+
+JGS keeps only the Haijun registry entry and link.

@@ -16,3 +16,18 @@ Haicode is the language center of the JGS ecosystem.
 - Behavior preservation.
 - Toolchain integration with JCH.
 - ABI direction with HCB.
+
+## Packaging Rule
+
+Haicode must become a separate package family. The JGS root repository only
+keeps the registry entry, doctrine summary, and links.
+
+Future package examples:
+
+- `haic`
+- `haicpp`
+- `haipy`
+- `haijs`
+- `hairust`
+- `haigo`
+- other `hai*` family packages

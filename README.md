@@ -1,20 +1,30 @@
 # JGS
 
-JGS means **JuGloW Global System**. It is the central repository for the
+JGS means **JuGloW Global System**. It is the central index and registry for the
 JuGloW ecosystem: Haicode, the hai* language family, JCH, HCB ABI, JUROX OS,
-and Haijun AI.
+Haijun AI, and future JGS packages.
 
 JGS is a meta-programming language framework that maps programming languages
 into the Haicode family. The Haicode language family (`hai*`) provides
 specialized implementations for each programming paradigm, with `haic*` as the
 foundational bridge for C/C++ and Unix/Linux system concepts.
 
-## Initial Structure
+## Repository Role
+
+This repository is the **JGS root registry**, not a monolithic source package.
+Each major project must live in its own repository or installable package. JGS
+keeps the public map, links, status, standards, and installation index.
+
+Large source families such as Haicode, JCH, JUROX, Haijun, and future `hai*`
+packages should be downloaded or installed separately according to need.
+
+## Initial Registry Structure
 
 - `docs/`: ecosystem maps, roadmap, governance, and cloud/DNS planning.
-- `haicode/`: Haicode and Converhai planning.
-- `haijun/`: Haijun AI integration notes.
-- `jurox/`: JUROX OS architecture direction.
+- `registry/`: package registry, repository links, and install index.
+- `haicode/`: Haicode and Converhai registry entry.
+- `haijun/`: Haijun AI registry entry.
+- `jurox/`: JUROX OS registry entry.
 - `infrastructure/`: domain, DNS, cloud, GPU, storage, and database planning.
 - `datasets/`: dataset governance, curation, and safety rules.
 - `models/`: model selection and server-only model policy.
@@ -31,6 +41,7 @@ foundational bridge for C/C++ and Unix/Linux system concepts.
 
 - Do not commit model weights.
 - Do not commit `.env`, tokens, SSH keys, passwords, or private company data.
-- Do not store large archives here.
+- Do not turn this repository into one global source bundle.
+- Do not store large archives or separate package sources here.
 - Keep GPU training artifacts on the GPU server or approved storage.
-- Use this repository as the public structure and planning source for JGS.
+- Use this repository as the public index and planning source for JGS.
