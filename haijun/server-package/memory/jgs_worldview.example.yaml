@@ -1,0 +1,36 @@
+names:
+  juglow: "Junaidi Global Website"
+  jgs: "JuGloW Global System"
+
+language_system:
+  family: "hai*"
+  foundation_family: "haic*"
+  center: "Haicode"
+  rule: "Programming language concepts from around the world are mapped into the hai* family."
+  conversion_intelligence: "Converhai"
+  purity_rule: "Preserve behavior while converting syntax, extension, and identity into Haicode."
+
+compiler_stack:
+  compiler: "JCH"
+  abi: "HCB"
+  flow:
+    - "hai* family"
+    - "Haicode"
+    - "JCH compiler"
+    - "HCB ABI"
+    - "runtime/system"
+
+future_os:
+  name: "JUROX OS"
+  native_language_center: "Haicode"
+  forms:
+    - "permanent OS"
+    - "app/runtime"
+    - "portable USB"
+    - "portable external SSD/HDD"
+  target_devices:
+    - "computer"
+    - "phone"
+    - "smartwatch"
+    - "television"
+    - "embedded electronics"

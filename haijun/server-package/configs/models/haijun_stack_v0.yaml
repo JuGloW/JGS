@@ -1,0 +1,75 @@
+stack_name: "haijun_stack_v0"
+policy: "server_only_for_models_local_control_only"
+
+selected_roles:
+  primary_agentic_coder:
+    model_family: "Qwen3-Coder-Next / Qwen3-Coder"
+    mode: "server_runtime_or_teacher"
+    reason: "agentic coding, CLI workflows, executable task training"
+
+  large_code_teacher:
+    model_family: "Qwen3-Coder-480B-A35B-Instruct"
+    mode: "teacher_or_high_budget_server"
+    reason: "large agentic coding model for evaluation and distillation targets"
+
+  comparative_code_teacher:
+    model_family: "DeepSeek-Coder-V2"
+    mode: "teacher_evaluator"
+    reason: "strong code model for cross-checking repair and conversion outputs"
+
+  retrieval_memory:
+    model_family: "BAAI/bge-m3"
+    mode: "server_embedding_baseline"
+    reason: "multilingual dense, sparse, and multi-vector retrieval baseline"
+
+  multimodal:
+    model_family: "Qwen Omni family"
+    mode: "server_multimodal"
+    reason: "text, image, audio, video understanding"
+
+  speech:
+    model_family: "Whisper"
+    mode: "server_or_api_asr"
+    reason: "mature multilingual speech-to-text baseline"
+
+  security_guard:
+    model_family: "deterministic_scanners_plus_llm_review"
+    mode: "tool_stack"
+    candidates:
+      - "Semgrep"
+      - "CodeQL"
+      - "Bandit"
+      - "gosec"
+      - "njsscan"
+      - "Snyk Code"
+      - "Garak"
+      - "Lakera Guard"
+    reason: "security must not rely on generative model judgment alone"
+
+  cli_patterns_to_study:
+    mode: "research_targets"
+    candidates:
+      - "Aider"
+      - "Continue"
+      - "Tabby"
+      - "Ollama"
+      - "Codex CLI"
+      - "Qwen Code"
+    reason: "study developer-agent UX and command-control patterns for JCLI/Haijun CLI"
+
+unresolved_roles:
+  reasoning_architecture:
+    needed_for:
+      - "JCH compiler design"
+      - "HCB ABI analysis"
+      - "JUROX OS architecture"
+      - "Converhai semantic conversion"
+    decision: "benchmark before final selection"
+
+  code_embedding:
+    needed_for:
+      - "source tree retrieval"
+      - "Converhai mapping"
+      - "symbol and function dictionary search"
+    decision: "benchmark BGE-M3 against code-specific embeddings"
+

@@ -1,0 +1,25 @@
+base_models:
+  small_cpu_test:
+    model_id: "sshleifer/tiny-gpt2"
+    purpose: "Local pipeline smoke test only; not a real Haijun candidate."
+    min_vram_gb_qlora: 0
+
+  code_7b_candidate:
+    model_id: "REPLACE_WITH_CODE_OR_GENERAL_INSTRUCT_MODEL"
+    purpose: "First practical JGS coding assistant adapter."
+    min_vram_gb_qlora: 16
+    notes: "Pick a mature instruct/code model with permissive license before GPU training."
+
+  code_14b_candidate:
+    model_id: "REPLACE_WITH_STRONGER_CODE_OR_GENERAL_INSTRUCT_MODEL"
+    purpose: "Higher quality adapter when budget allows."
+    min_vram_gb_qlora: 24
+    notes: "Use only after the dataset and evaluation suite are stable."
+
+selection_rules:
+  - "Prefer models with clear license terms and active tokenizer/chat-template support."
+  - "Start with 7B-class QLoRA before spending on larger runs."
+  - "Do not train on private or sensitive data unless the GPU server storage policy is acceptable."
+  - "Keep one baseline run with the unfine-tuned base model for comparison."
+  - "Download and cache base models only on the GPU server, never on the local control computer."
+  - "Record exact model id, revision, license, context length, VRAM need, and training cost after every run."
