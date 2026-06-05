@@ -14,13 +14,19 @@ independently.
 
 | Project | Role | Repository |
 | --- | --- | --- |
-| Haijun | Private AI developer agent for JGS | [JuGloW/haijun](https://github.com/JuGloW/haijun) |
-| Haicode | Root of the Haicode and `hai*` language family | [JuGloW/haicode](https://github.com/JuGloW/haicode) |
-| JUROX OS | Future OS/runtime direction centered on Haicode | [JuGloW/jurox](https://github.com/JuGloW/jurox) |
-| JCH | Compiler and toolchain package | [JuGloW/jch](https://github.com/JuGloW/jch) |
-| HCB ABI | ABI specification and binary compatibility direction | [JuGloW/hcb-abi](https://github.com/JuGloW/hcb-abi) |
-| JDB | Debugger direction for Haicode/JCH/HCB | [JuGloW/jdb](https://github.com/JuGloW/jdb) |
-| haic | C and Unix/Linux bridge inside Haicode | [JuGloW/haic](https://github.com/JuGloW/haic) |
+| Haijun | Private AI developer agent for JGS | [JuGloW/Haijun](https://github.com/JuGloW/Haijun) |
+| Haicode | Root of the Haicode and `hai*` language family | [JuGloW/Haicode](https://github.com/JuGloW/Haicode) |
+| Converhai | Conversion doctrine and tooling into Haicode/hai* | [JuGloW/Converhai](https://github.com/JuGloW/Converhai) |
+| JUROX OS | Future OS/runtime direction centered on Haicode | [JuGloW/Jurox](https://github.com/JuGloW/Jurox) |
+| JCH | Compiler and toolchain package | [JuGloW/JCH](https://github.com/JuGloW/JCH) |
+| HCB ABI | ABI specification and binary compatibility direction | [JuGloW/HCB-ABI](https://github.com/JuGloW/HCB-ABI) |
+| JDB | Debugger direction for Haicode/JCH/HCB | [JuGloW/JDB](https://github.com/JuGloW/JDB) |
+| Haic | C and Unix/Linux bridge inside Haicode | [JuGloW/Haic](https://github.com/JuGloW/Haic) |
+| Haicpp | C++ bridge inside Haicode | [JuGloW/Haicpp](https://github.com/JuGloW/Haicpp) |
+| Haipy | Python bridge inside Haicode | [JuGloW/Haipy](https://github.com/JuGloW/Haipy) |
+| Haijs | JavaScript bridge inside Haicode | [JuGloW/Haijs](https://github.com/JuGloW/Haijs) |
+| Haigo | Go bridge inside Haicode | [JuGloW/Haigo](https://github.com/JuGloW/Haigo) |
+| Hairust | Rust bridge inside Haicode | [JuGloW/Hairust](https://github.com/JuGloW/Hairust) |
 
 ## Haicode Family Direction
 
@@ -52,11 +58,13 @@ The intended local layout is:
 D:\JuGloW\JGS
 D:\JuGloW\haijun
 D:\JuGloW\haicode
+D:\JuGloW\converhai
 D:\JuGloW\jurox
 D:\JuGloW\jch
 D:\JuGloW\hcb-abi
 D:\JuGloW\jdb
 D:\JuGloW\haic
+D:\JuGloW\haicpp
 ```
 
 ## Repository Contents

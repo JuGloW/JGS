@@ -11,13 +11,19 @@ should open the separate repository for that project.
 
 | Package | Purpose | Target |
 | --- | --- | --- |
-| Haijun | AI developer agent and server package | <https://github.com/JuGloW/haijun> |
-| Haicode | Root language family | <https://github.com/JuGloW/haicode> |
-| haic | C/Unix/Linux bridge family | <https://github.com/JuGloW/haic> |
-| JCH | Compiler/toolchain | <https://github.com/JuGloW/jch> |
-| HCB ABI | ABI specification | <https://github.com/JuGloW/hcb-abi> |
-| JUROX OS | OS/runtime direction | <https://github.com/JuGloW/jurox> |
-| JDB | Debugger direction | <https://github.com/JuGloW/jdb> |
+| Haijun | AI developer agent and server package | <https://github.com/JuGloW/Haijun> |
+| Haicode | Root language family | <https://github.com/JuGloW/Haicode> |
+| Converhai | Conversion doctrine/tooling into Haicode/hai* | <https://github.com/JuGloW/Converhai> |
+| Haic | C/Unix/Linux bridge family | <https://github.com/JuGloW/Haic> |
+| Haicpp | C++ bridge family | <https://github.com/JuGloW/Haicpp> |
+| Haipy | Python bridge family | <https://github.com/JuGloW/Haipy> |
+| Haijs | JavaScript bridge family | <https://github.com/JuGloW/Haijs> |
+| Haigo | Go bridge family | <https://github.com/JuGloW/Haigo> |
+| Hairust | Rust bridge family | <https://github.com/JuGloW/Hairust> |
+| JCH | Compiler/toolchain | <https://github.com/JuGloW/JCH> |
+| HCB ABI | ABI specification | <https://github.com/JuGloW/HCB-ABI> |
+| JUROX OS | OS/runtime direction | <https://github.com/JuGloW/Jurox> |
+| JDB | Debugger direction | <https://github.com/JuGloW/JDB> |
 
 ## Extended Planned Repository Descriptions
 
@@ -25,6 +31,8 @@ Use these descriptions when manually creating future GitHub repositories.
 
 | Repository | Description |
 | --- | --- |
+| `converhai` | Conversion doctrine and tooling for translating external languages into Haicode/hai*. |
+| `haicpp` | C++ bridge package inside the Haicode family. |
 | `jurofile` | Project file format and build metadata standard for JUROX/JGS packages. |
 | `executable` | Executable format and runtime execution rules for JGS/JUROX packages. |
 | `executtools` | Tool collection for executable package workflows in the JGS ecosystem. |
