@@ -1,45 +1,77 @@
 # JGS
 
-JGS means **JuGloW Global System**. It is the central index and registry for the
-JuGloW ecosystem: Haicode, the hai* language family, JCH, HCB ABI, JUROX OS,
-Haijun AI, and future JGS packages.
+**JGS** means **JuGloW Global System**.
 
-JGS is a meta-programming language framework that maps programming languages
-into the Haicode family. The Haicode language family (`hai*`) provides
-specialized implementations for each programming paradigm, with `haic*` as the
-foundational bridge for C/C++ and Unix/Linux system concepts.
+This repository is the starting document and navigation hub for the whole
+JuGloW ecosystem. It explains the system, records the main project links, and
+points each part of JGS to its own repository.
 
-## Repository Role
+JGS is not one giant source bundle. Each major part of the ecosystem lives in a
+separate repository so it can be downloaded, installed, developed, and released
+independently.
 
-This repository is the **JGS root registry**, not a monolithic source package.
-Each major project must live in its own repository or installable package. JGS
-keeps the public map, links, status, standards, and installation index.
+## Main Projects
 
-Large source families such as Haicode, JCH, JUROX, Haijun, and future `hai*`
-packages should be downloaded or installed separately according to need.
+| Project | Role | Repository |
+| --- | --- | --- |
+| Haijun | Private AI developer agent for JGS | [JuGloW/haijun](https://github.com/JuGloW/haijun) |
+| Haicode | Root of the Haicode and `hai*` language family | [JuGloW/haicode](https://github.com/JuGloW/haicode) |
+| JUROX OS | Future OS/runtime direction centered on Haicode | [JuGloW/jurox](https://github.com/JuGloW/jurox) |
+| JCH | Compiler and toolchain package | [JuGloW/jch](https://github.com/JuGloW/jch) |
+| HCB ABI | ABI specification and binary compatibility direction | [JuGloW/hcb-abi](https://github.com/JuGloW/hcb-abi) |
+| JDB | Debugger direction for Haicode/JCH/HCB | [JuGloW/jdb](https://github.com/JuGloW/jdb) |
+| haic | C and Unix/Linux bridge inside Haicode | [JuGloW/haic](https://github.com/JuGloW/haic) |
 
-## Registry Files
+## Haicode Family Direction
 
-- `registry/packages.yaml`: source of truth for package/repository targets.
-- `registry/install-index.md`: human-readable package index.
-- `registry/README.md`: registry rules.
+Haicode is the language center of JGS. The `hai*` family will contain many
+separate packages, such as `haic`, `haicpp`, `haipy`, `haijs`, `hairust`,
+`haigo`, and future members. JGS only points to them; it does not contain all
+their source code.
 
-This root repository should remain intentionally small. Detailed docs and source
-trees belong in their separate repositories, for example `haijun`, `haicode`,
-`jurox`, `jch`, and future `hai*` packages.
-
-## Current Domain
+## Domain And DNS
 
 - Primary domain: `juglow.my.id`
 - Registrar: DomaiNesia
 - DNS provider: Cloudflare
 - DNS status: active/protected
 
-## Repository Rules
+Current DNS identity records:
 
+- `jgs.juglow.my.id`
+- `haijun.juglow.my.id`
+- `api.juglow.my.id`
+- `gpu.juglow.my.id`
+- `storage.juglow.my.id`
+
+## Local Workspace Shape
+
+The intended local layout is:
+
+```text
+D:\JuGloW\JGS
+D:\JuGloW\haijun
+D:\JuGloW\haicode
+D:\JuGloW\jurox
+D:\JuGloW\jch
+D:\JuGloW\hcb-abi
+D:\JuGloW\jdb
+D:\JuGloW\haic
+```
+
+## Repository Contents
+
+This JGS repository should stay small:
+
+- `README.md`: main ecosystem document and clickable project map.
+- `registry/packages.yaml`: structured project link data.
+- `registry/install-index.md`: human-readable install/link index.
+- `registry/README.md`: registry notes.
+
+## Rules
+
+- Do not store every project source inside JGS.
 - Do not commit model weights.
 - Do not commit `.env`, tokens, SSH keys, passwords, or private company data.
-- Do not turn this repository into one global source bundle.
-- Do not store large archives or separate package sources here.
-- Keep GPU training artifacts on the GPU server or approved storage.
-- Use this repository as the public index and planning source for JGS.
+- Do not store large archives here.
+- Use JGS as the central document and link hub for the whole ecosystem.

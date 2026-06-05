@@ -4,12 +4,12 @@ domain: "juglow.my.id"
 dns_provider: "Cloudflare"
 
 packages:
-  - id: "haijun-ai"
-    name: "Haijun AI"
+  - id: "haijun"
+    name: "Haijun"
     type: "ai-agent"
     status: "planned-separate-repository"
-    repository_target: "https://github.com/JuGloW/haijun-ai"
-    local_workspace: "D:/github AI/haijun-ai"
+    repository_target: "https://github.com/JuGloW/haijun"
+    local_workspace: "D:/JuGloW/haijun"
     server_root: "/workspace/haijun-ai/server-package"
     notes: "Private AI developer agent and server package. Not bundled into JGS root."
 

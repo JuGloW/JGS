@@ -1,14 +1,15 @@
-# JGS Registry
+# JGS Link Registry
 
-The registry is the source of truth for ecosystem package links.
+The registry stores structured link data for the JGS documentation hub.
 
-JGS is not a single global download bundle. It is an index that points to many
-separate repositories and installable packages.
+JGS is not a single global source bundle. It is the starting document for the
+whole ecosystem and points to many separate repositories and installable
+packages.
 
 ## Registry Files
 
-- `packages.yaml`: package list, repository targets, and status.
-- `install-index.md`: human-readable install/download index.
+- `packages.yaml`: project list, repository targets, and status.
+- `install-index.md`: human-readable project/install index.
 
 ## Rules
 

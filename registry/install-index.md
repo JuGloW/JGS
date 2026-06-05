@@ -1,6 +1,7 @@
-# JGS Install Index
+# JGS Project Link Index
 
-This page will grow into the download/install index for JGS packages.
+This page lists the main JGS projects and their future repositories. Each link
+should open the separate repository for that project.
 
 ## Root
 
@@ -10,7 +11,7 @@ This page will grow into the download/install index for JGS packages.
 
 | Package | Purpose | Target |
 | --- | --- | --- |
-| Haijun AI | AI developer agent and server package | <https://github.com/JuGloW/haijun-ai> |
+| Haijun | AI developer agent and server package | <https://github.com/JuGloW/haijun> |
 | Haicode | Root language family | <https://github.com/JuGloW/haicode> |
 | haic | C/Unix/Linux bridge family | <https://github.com/JuGloW/haic> |
 | JCH | Compiler/toolchain | <https://github.com/JuGloW/jch> |
@@ -20,5 +21,5 @@ This page will grow into the download/install index for JGS packages.
 
 ## Policy
 
-Install only what is needed. Do not download the full JGS ecosystem when a
-single package is enough.
+Open or install only what is needed. Do not download the full JGS ecosystem
+when a single package is enough.
